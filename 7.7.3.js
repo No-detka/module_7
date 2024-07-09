@@ -22,9 +22,16 @@ const user1 = {
   
   console.log(userAge);
   
-  //получаем имена пользователей
-  const userName = users.map((item) => {
+  // Вариант 1(т.к. в задании не понятно каких именно пользователей выводить в массив) далее получаем имена пользователей, кому больше 18ти
+  const userName1 = userAge.map((item) => {
     return item.name;
   });
   
-  console.log(userName);
+  console.log(userName1);
+
+   // Вариант 2 далее получаем имена пользователей.
+   const userName2 = users.map((item) => {
+    return item.name;
+  });
+  
+  console.log(userName2);
